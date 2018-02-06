@@ -1,9 +1,9 @@
 //
-//  SGQRCodeScanningVC.m
-//  SGQRCodeExample
+//  CJViewController.m
+//  CJRCode
 //
-//  Created by kingsic on 17/3/20.
-//  Copyright © 2017年 kingsic. All rights reserved.
+//  Created by 曹记 on 2018/2/6.
+//  Copyright © 2018年 曹记. All rights reserved.
 //
 
 #import "SGQRCodeScanningVC.h"
@@ -44,7 +44,6 @@
     // Do any additional setup after loading the view from its nib.
     self.view.backgroundColor = [UIColor clearColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
-    
     [self.view addSubview:self.scanningView];
     [self setupNavigationBar];
     [self setupQRCodeScanning];
@@ -119,7 +118,12 @@
         
         AVMetadataMachineReadableCodeObject *obj = metadataObjects[0];
         ScanSuccessJumpVC *jumpVC = [[ScanSuccessJumpVC alloc] init];
-        jumpVC.jump_URL = [obj stringValue];
+        //jumpVC.jump_URL = [obj stringValue];
+        if ([[obj stringValue] containsString:@"http"]) {
+            jumpVC.jump_URL = [obj stringValue];
+        }else{
+            jumpVC.jump_bar_code = [obj stringValue];
+        }
         [self.navigationController pushViewController:jumpVC animated:YES];
     } else {
         NSLog(@"暂未识别出扫描的二维码");

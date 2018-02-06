@@ -1,9 +1,9 @@
 //
-//  QRCodeGenerateVC.h
-//  SGQRCodeExample
+//  CJViewController.m
+//  CJRCode
 //
-//  Created by kingsic on 16/8/25.
-//  Copyright © 2016年 kingsic. All rights reserved.
+//  Created by 曹记 on 2018/2/6.
+//  Copyright © 2018年 曹记. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

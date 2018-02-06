@@ -1,9 +1,9 @@
 //
-//  SGWebView.m
-//  SGWebViewExample
+//  CJViewController.m
+//  CJRCode
 //
-//  Created by kingsic on 17/3/27.
-//  Copyright © 2017年 kingsic. All rights reserved.
+//  Created by 曹记 on 2018/2/6.
+//  Copyright © 2018年 曹记. All rights reserved.
 //
 
 #import "SGWebView.h"
