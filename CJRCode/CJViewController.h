@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CJViewController.h
 //  CJRCode
 //
 //  Created by 曹记 on 2018/2/6.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CJViewController : UIViewController
 
 @end
-
